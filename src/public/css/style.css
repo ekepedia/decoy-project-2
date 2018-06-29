@@ -1,0 +1,586 @@
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.10;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'Gothman Medium', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: #3E3A38;
+}
+
+h1 {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+}
+
+h2 {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+    font-size: 24px;
+}
+
+main {
+    margin-top: 63px;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.page {
+    padding-top: 41px;
+    padding-left: 62px;
+    padding-right: 62px;
+    padding-bottom: 40px;
+    margin-right: 56px;
+}
+
+.event-page {
+    background-color: #544E4B;
+}
+
+.event-page h1,
+.event-page h2,
+.event-page .bread-text,
+.event-page .bread-crumbs {
+    color: #FCFCFC;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding-left: 41px;
+        padding-right: 41px;
+    }
+}
+
+.footer{
+    padding-left: 41px;
+    padding-right: 41px;
+}
+
+.navbar-brand {
+    height: 63px;
+    padding: 0;
+}
+
+.navbar-brand img {
+    height: 63px;
+}
+
+.navbar-nav {
+    float: none;
+    display: inline-block;
+}
+
+#myNavBar {
+    text-align: center;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #FEF2DD;
+}
+
+.section {
+    margin-bottom: 90.5px;
+}
+
+input:active, input:focus {
+    outline: none !important;
+}
+
+a {
+    color: #3E3A38
+}
+
+.icon-bar {
+    background-color: #3E3A38;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+}
+
+.container-fluid>.navbar-collapse, .container-fluid>.navbar-header, .container>.navbar-collapse, .container>.navbar-header {
+    background-color: #FEF2DD;
+}
+
+.main-body-blur {
+    -webkit-filter: blur(10px) grayscale(80%);
+    -moz-filter: blur(10px) grayscale(80%);
+    -o-filter: blur(10px) grayscale(80%);
+    -ms-filter: blur(10px);
+    filter: blur(10px) grayscale(80%);
+    z-index: -10;
+}
+
+.color-grey-odds {
+    color: #97AFAF;
+}
+
+/* FEATURE CARD */
+.card-feature {
+    width: 278px;
+    height: 372px;
+    color: #FEF2DD;
+    font-size: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.card-feature .card-component-body, .card-feature .card-component-footer {
+   padding: 0 17px;
+}
+
+.card-feature .card-component-body {
+    height: 332px;
+    background-color: rgba(62,58,56,0.7);
+    padding: 23px 17px;
+    position: relative;
+}
+
+.card-feature .card-component-header .card-component-category {
+    float: left;
+}
+
+.card-feature .card-component-header .card-component-time {
+    float: right;
+}
+
+.card-feature .card-component-actors {
+    clear: both;
+    font-size: 36px;
+    margin-top: 38px;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+    width: 90%;
+}
+
+.card-feature .card-component-odds {
+    position: absolute;
+    bottom: 23px;
+}
+
+.card-feature .card-component-odds h3, .card-feature .card-component-odds p {
+    margin: 0;
+}
+
+.card-feature .card-component-odds h3 {
+    font-size: 36px;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+}
+
+.card-feature .card-component-background {
+    left: 0;
+    height: 332px;
+    width: 278px;
+    position: absolute;
+    background-position: center;
+    -webkit-background-size: auto 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    top: 0;
+    z-index: -10;
+    -webkit-transition: background-size 0.75s;
+    -moz-transition: background-size 0.75s;
+    -ms-transition: background-size 0.75s;
+    -o-transition: background-size 0.75s;
+    transition: background-size 0.75s;
+    transition-timing-function: ease;
+}
+
+.card-feature:hover .card-component-background {
+    background-size: auto 120%;
+}
+
+.card-feature .card-component-footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #3E3A38;
+}
+
+/* CATEGORY CARD */
+.card-category {
+    width: 144px;
+    height: 144px;
+    color: #3E3A38;
+    font-size: 10px;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.card-category .card-component-body, .card-category .card-component-footer {
+    padding: 0 17px;
+}
+
+.card-category .card-component-body {
+    height: 104px;
+    background-color: #F3EADC;
+    padding: 13px 17px;
+    position: relative;
+}
+
+.card-category .card-component-events {
+    position: absolute;
+    bottom: 5px;
+}
+
+.card-category .card-component-events p {
+    margin: 0;
+}
+
+.card-category .card-component-events span {
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+}
+
+.card-category .card-component-footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #FEF2DD;
+}
+
+/* EVENT CARD */
+.card-event {
+    width: 144px;
+    height: 144px;
+    color: #3E3A38;
+    font-size: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card-event .card-component-body, .card-event .card-component-footer {
+    padding: 0 17px;
+}
+
+.card-event .card-component-body {
+    height: 104px;
+    background-color: #F3EADC;
+    padding: 13px 17px;
+    position: relative;
+}
+
+.card-event .card-component-odds{
+    bottom: 5px;
+    left: 0;
+    padding: inherit;
+    position: absolute;
+    width: 100%;
+    font-size: 9px;
+}
+
+.card-event .card-component-odds p {
+    margin: 0;
+}
+
+.card-event .card-component-footer {
+    height: 40px;
+    line-height: 40px;
+    background-color: #FEF2DD;
+}
+
+/* SIMPLE CARD */
+.card-simple {
+    width: 230px;
+    height: 259px;
+    color: #3E3A38;
+    font-size: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.card-simple .card-component-header {
+    padding: 0 17px;
+}
+
+.card-simple .card-component-header p {
+   margin: 0;
+}
+
+.card-simple .card-component-body {
+    height: 207px;
+    background-color: #F3EADC;
+    position: relative;
+}
+
+.card-simple .card-component-actor {
+    clear: both;
+    height: 33%;
+    line-height: 37px;
+    border-bottom: solid 3px #FEF2DD;
+    padding: 0 17px;
+    overflow: hidden;
+}
+
+.card-simple .card-component-odds{
+    bottom: 5px;
+    left: 0;
+    padding: inherit;
+    position: absolute;
+    width: 100%;
+    font-size: 9px;
+}
+
+.card-simple .card-component-odds p {
+    margin: 0;
+}
+
+.card-simple>.card-component-header {
+    height: 52px;
+    line-height: 52px;
+    background-color: #FEF2DD;
+}
+
+.card-simple .card-component-cta {
+    text-align: center;
+    width: 100%;
+    clear: both;
+}
+
+.card-simple .card-component-cta button {
+    background-color: #3FCC80;
+    color: #FCFCFC;
+    border: none;
+    width: 189px;
+    font-size: 14px;
+}
+
+/* SUBNAV */
+
+.sub-nav {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+
+    background-color: #FEF2DD;
+    color: #3E3A38;
+
+    font-size: 14px;
+    text-align: center;
+}
+
+.sub-nav .nav-option {
+    height: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.sub-nav .nav-option:hover {
+    font-size: 15px;
+}
+
+.sub-nav .nav-option.selected {
+    color: #FEF2DD;
+    background-color: #3E3A38;
+    font-size: 15px;
+}
+
+
+.sub-nav .nav-option + .nav-option  {
+    border-left: 1px solid #3E3A38;
+    height: 100%;
+    display: inline-block;
+}
+
+.home-text {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    font-family: 'Old Standard TT', serif;
+    letter-spacing: -1px;
+    font-size: 16px;
+}
+
+.bread-crumbs {
+    font-size: 20px;
+    font-family: 'Old Standard TT', serif;
+    line-height: 20px;
+}
+
+.bread-next {
+    font-size: 10px;
+    top: -4px;
+    margin-left: 15px;
+    position: relative;
+    margin-right: 15px;
+}
+
+.game-viz-container {
+    vertical-align: top;
+    height: 320px;
+    width: 50%;
+    display: inline-block;
+    padding-right: 15px;
+}
+
+.game-viz {
+    width: 100%;
+    background-image: url("/img/football.png");
+    background-size: 100% auto;
+    height: 100%;
+}
+
+.depth-chart {
+    width: 100%;
+    background-image: url("/img/depth.png");
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.odds-chart {
+    width: 100%;
+    background-image: url("/img/odds.png");
+    background-size: 100% 100%;
+    height: 100%;
+}
+
+.game-score-container {
+    vertical-align: top;
+    height: 320px;
+    width: 50%;
+    display: inline-block;
+    padding-left: 15px;
+}
+
+.game-score {
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+}
+
+.game-time {
+    font-size: 24px;
+
+}
+
+.game-score .game-number {
+    width: 50%;
+    display: inline-block;
+}
+
+.game-score .game-number h1 {
+    font-size: 144px;
+    margin-bottom: -30px;
+}
+
+.game-score .game-quarter {
+    font-size: 36px;
+}
+
+.market-container {
+    height: 388px;
+}
+
+.depth-chart-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    height: 360px;
+}
+
+.markets-container {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    height: 360px;
+    background: #3E3A38;
+    border-left: solid 5px #524C49;
+}
+
+.market-container .header .chart-title, .market-container .header .market-title{
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: 14px;
+    color: #FEF2DD;
+    background-color: #292624;
+    height: 28px;
+    line-height: 28px;
+}
+
+.market-container .spread-market {
+    background-color: #3E3A38;
+    color: #FEF2DD;
+    border-bottom: solid 5px #524C49;
+
+}
+
+.market-container .spread-market .market-title {
+    font-family: "Gothman Medium", sans-serif;
+    text-align: center;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+
+.market-container .spread-markets {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.market-container .spread-market .option-button {
+    text-align: center;
+    width: 88px;
+    font-size: 11px;
+    display: inline-block;
+}
+
+.market-container .spread-market .option-button + .option-button {
+    margin-left: 10px;
+}
+
+.market-container .spread-market button {
+    width: 60px;
+    border: none;
+    height: 32px;
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: 'Old Standard TT', serif;
+}
+
+.wager-input-container {
+    display: inline-block;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 5px;
+
+}
+
+.wager-input-container .input-header {
+    font-size: 11px;
+
+}
+
+.wager-container input {
+    border: none;
+    width: 115px;
+    height: 32px;
+    text-align: center;
+    color: #524C49;
+}
+
+.wager-container .wager-done {
+    width: 115px !important;
+    vertical-align: bottom;
+    height: 32px !important;
+    margin: 0 !important;
+    color: #FCFCFC !important;
+    font-family: "Gothman Medium", sans-serif !important;
+    font-size: 14px !important;
+}

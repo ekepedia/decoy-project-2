@@ -1,0 +1,17 @@
+.x {
+    height: 37px;
+    float: right;
+    position: absolute;
+    top: 45px;
+    right: -69px;
+    z-index: 1000;
+}
+
+@media (max-width: 768px) {
+    .x {
+        height: 26px;
+        top: 40px;
+        right: 0;
+    }
+
+}

@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Gothman Bold";
+    src: url(/fonts/GothamHTF-Bold.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gothman Book Italic";
+    src: url(/fonts/GothamHTF-BookItalic.otf) format("truetype");
+}
+
+
+@font-face {
+    font-family: "Gothman Book";
+    src: url(/fonts/GothamHTF-Book.otf) format("truetype");
+}
+
+@font-face {
+    font-family: "Gothman Medium";
+    src: url(/fonts/GothamHTF-Medium.otf) format("truetype");
+}

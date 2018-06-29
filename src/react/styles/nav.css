@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #FEF2DD;
+    color: #3E3A38;
+    border: none;
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 63px;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: #3E3A38;
+    letter-spacing: 1pt;
+    font-size: 24px;
+    font-family: 'Old Standard TT', serif;
+    line-height: 30px !important;
+}
